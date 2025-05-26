@@ -10,7 +10,8 @@ router.get('/testUserAPI', (req,res) => {
     });
 });
 
-// ... existing code ...
+
+
 router.get('/testUserApi', userController.testUserAPI);
 router.get('/', userController.getAllUsers);
 router.get('/:id', userController.getUserById);

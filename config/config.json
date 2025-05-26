@@ -5,15 +5,23 @@
     "database": "nodejs_app_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
+  },
 
-  },
+
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "miguelo",
+    "password": "evKc7v8v6QG5klxodWEToRQlA4tGjKNd",
+    "database": "nodejs_app_test",
+    "host": "dpg-d0qcc13e5dus739f1ah0-a",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
+  
   "production": {
     "username": "root",
     "password": null,

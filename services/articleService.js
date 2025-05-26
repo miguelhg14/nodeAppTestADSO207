@@ -12,7 +12,7 @@ const getAllArticles = async () => {
             exclude: ["createdAt", "updatedAt"]
           }
         },
-        include: ["categories"] // Con esta propiedad estamos incluyendo las categorías que están relacionadas al artículo
+        include: ["category"] // Con esta propiedad estamos incluyendo las categorías que están relacionadas al artículo
       });
       return Articles;
     } catch (error) {
@@ -83,3 +83,4 @@ module.exports = {
     updateArticle,
     deleteArticle,
 };
+
